@@ -21,12 +21,19 @@ La idea de este curso es avanzar paso a paso, entendiendo realmente cómo funcio
 El objetivo principal es que puedas:
 
 ✅ aprender lógica de programación
+
 ✅ resolver problemas usando código
+
 ✅ entender programación secuencial
+
 ✅ dominar Python desde cero
+
 ✅ aprender Programación Orientada a Objetos
+
 ✅ crear proyectos reales
+
 ✅ practicar con ejercicios y desafíos
+
 ✅ desarrollar pensamiento computacional
 
 ---
