@@ -1,4 +1,4 @@
-from practica import *
+from ETAPA_1_programacion_secuencial.M03_Operadores.practica import *
 
 puntaje = 0
 total = 13

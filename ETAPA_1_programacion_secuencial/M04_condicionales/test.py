@@ -1,4 +1,4 @@
-from practica import *
+from ETAPA_1_programacion_secuencial.M04_condicionales.practica import *
 
 puntaje = 0
 total = 10
@@ -20,81 +20,86 @@ def incorrecto(numero, detalle=""):
         print(f"   {detalle}")
 
 
-def validar(numero, resultado, esperado):
-
-    if resultado == esperado:
+def validar_string(numero, resultado):
+    if isinstance(resultado, str) and len(resultado.strip()) > 0:
         correcto(numero)
-
     else:
-        incorrecto(
-            numero,
-            f"Esperado: {esperado} | Recibido: {resultado}"
-        )
+        incorrecto(numero, "Debe retornar un texto.")
 
 
+def validar_booleano(numero, resultado):
+    if isinstance(resultado, bool):
+        correcto(numero)
+    else:
+        incorrecto(numero, "Debe retornar True o False.")
+
+
+# Ejercicio 1
 try:
-    validar(1, ejercicio_1(), "Hola")
+    validar_string(1, ejercicio_1())
 except Exception as error:
     incorrecto(1, error)
 
 
+# Ejercicio 2
 try:
-    validar(2, ejercicio_2("Enzo"), "Enzo")
+    validar_string(2, ejercicio_2())
 except Exception as error:
     incorrecto(2, error)
 
 
+# Ejercicio 3
 try:
-    validar(3, ejercicio_3(10, 5), 15)
+    validar_string(3, ejercicio_3())
 except Exception as error:
     incorrecto(3, error)
 
 
+# Ejercicio 4
 try:
-    validar(4, ejercicio_4(10, 5), 50)
+    validar_booleano(4, ejercicio_4())
 except Exception as error:
     incorrecto(4, error)
 
 
+# Ejercicio 5
 try:
-    validar(5, ejercicio_5(), True)
+    validar_booleano(5, ejercicio_5())
 except Exception as error:
     incorrecto(5, error)
 
 
+# Ejercicio 6
 try:
-    validar(6, ejercicio_6(), False)
+    validar_string(6, ejercicio_6())
 except Exception as error:
     incorrecto(6, error)
 
 
+# Ejercicio 7
 try:
-    validar(7, ejercicio_7(20), "Mayor")
+    validar_string(7, ejercicio_7())
 except Exception as error:
     incorrecto(7, error)
 
 
+# Ejercicio 8
 try:
-    validar(8, ejercicio_8("Hola ", "Python"), "Hola Python")
+    validar_string(8, ejercicio_8())
 except Exception as error:
     incorrecto(8, error)
 
 
+# Ejercicio 9
 try:
-    validar(9, ejercicio_9("Enzo"), "Hola Enzo")
+    validar_booleano(9, ejercicio_9())
 except Exception as error:
     incorrecto(9, error)
 
 
+# Ejercicio 10
 try:
-    resultado = ejercicio_10()
-
-    if resultado is not None:
-        correcto(10)
-
-    else:
-        incorrecto(10, "Debe retornar algún valor.")
-
+    validar_string(10, ejercicio_10())
 except Exception as error:
     incorrecto(10, error)
 

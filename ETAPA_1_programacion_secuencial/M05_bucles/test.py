@@ -1,4 +1,4 @@
-from practica import *
+from ETAPA_1_programacion_secuencial.M05_bucles.practica import *
 
 puntaje = 0
 total = 10
