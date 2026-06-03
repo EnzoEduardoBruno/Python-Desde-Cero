@@ -3,6 +3,7 @@
 Bienvenido al primer módulo de **Python Desde Cero**.
 
 En este módulo vas a aprender:
+
 - qué es programar
 - qué es un algoritmo
 - qué es la programación secuencial
@@ -44,7 +45,13 @@ Eso es un algoritmo porque tiene pasos ordenados.
 
 La programación secuencial significa que las instrucciones se ejecutan una después de otra, en orden.
 
-Ejemplo:
+Python lee el código desde arriba hacia abajo.
+
+---
+
+# 🧪 Ejemplo — Programación secuencial
+
+## Paso 1 — Código
 
 ```python
 print("Hola")
@@ -52,11 +59,23 @@ print("Bienvenido")
 print("Python")
 ```
 
-La computadora ejecuta:
+## Paso 2 — Resultado
+
+```text
+Hola
+Bienvenido
+Python
+```
+
+## Paso 3 — ¿Qué ocurrió?
+
+Python ejecutó:
 
 1. `print("Hola")`
 2. `print("Bienvenido")`
 3. `print("Python")`
+
+en ese mismo orden.
 
 ---
 
@@ -64,13 +83,17 @@ La computadora ejecuta:
 
 `print()` sirve para mostrar información por pantalla.
 
-Ejemplo:
+---
+
+# 🧪 Ejemplo — print()
+
+## Paso 1 — Código
 
 ```python
 print("Hola mundo")
 ```
 
-Resultado:
+## Paso 2 — Resultado
 
 ```text
 Hola mundo
@@ -82,36 +105,106 @@ Hola mundo
 
 `input()` sirve para pedirle información al usuario.
 
-Ejemplo:
+---
+
+# 🧪 Ejemplo — input()
+
+## Paso 1 — Código
 
 ```python
-input("Ingrese su nombre: ")
+nombre = input("Ingrese su nombre: ")
+
+print(nombre)
 ```
 
-Cuando se ejecuta, el programa espera que el usuario escriba algo y presione ENTER.
+## Paso 2 — Programa ejecutándose
+
+```text
+Ingrese su nombre:
+```
+
+## Paso 3 — El usuario escribe
+
+```text
+Enzo
+```
+
+## Paso 4 — Resultado final
+
+```text
+Enzo
+```
+
+---
+
+# 🧠 ¿Qué ocurrió?
+
+- `input()` esperó información del usuario
+- el usuario escribió un texto
+- Python guardó ese texto en la variable `nombre`
+- luego `print(nombre)` mostró el resultado
 
 ---
 
 # 🔁 Entrada → Proceso → Salida
 
-Muchos programas funcionan con esta lógica:
+Muchos programas funcionan con esta lógica.
 
-## Entrada
+---
+
+# 📥 Entrada
+
 El usuario ingresa información.
-
-## Proceso
-El programa trabaja con esa información.
-
-## Salida
-El programa muestra un resultado.
 
 Ejemplo:
 
 ```python
 nombre = input("Ingrese su nombre: ")
+```
 
-print("Hola")
-print(nombre)
+---
+
+# ⚙️ Proceso
+
+El programa trabaja con la información recibida.
+
+Ejemplo:
+
+```python
+saludo = "Hola " + nombre
+```
+
+---
+
+# 📤 Salida
+
+El programa muestra un resultado.
+
+Ejemplo:
+
+```python
+print(saludo)
+```
+
+---
+
+# 🧪 Ejemplo completo
+
+## Paso 1 — Código
+
+```python
+nombre = input("Ingrese su nombre: ")
+
+saludo = "Hola " + nombre
+
+print(saludo)
+```
+
+## Paso 2 — Resultado
+
+```text
+Ingrese su nombre: Enzo
+Hola Enzo
 ```
 
 ---
@@ -120,14 +213,38 @@ print(nombre)
 
 `return` sirve para devolver un valor desde una función.
 
-Ejemplo:
+---
+
+# 🧪 Ejemplo — return
+
+## Paso 1 — Código
 
 ```python
 def saludar():
     return "Hola"
 ```
 
-En este caso, la función devuelve el texto:
+## Paso 2 — ¿Qué devuelve la función?
+
+```text
+Hola
+```
+
+---
+
+# 🧠 Importante
+
+`return` NO muestra información por pantalla.
+
+Solo devuelve un valor.
+
+Para mostrarlo, usamos `print()`:
+
+```python
+print(saludar())
+```
+
+Resultado:
 
 ```text
 Hola
@@ -141,7 +258,9 @@ Hola
 
 `print()` muestra información por pantalla.
 
-Ejemplo:
+---
+
+# 🧪 Ejemplo
 
 ```python
 print("Hola")
@@ -159,7 +278,9 @@ Hola
 
 `return` devuelve un valor.
 
-Ejemplo:
+---
+
+# 🧪 Ejemplo
 
 ```python
 def saludar():
@@ -216,6 +337,7 @@ if ejercicio_1() == "Hola mundo":
 Por eso las funciones deben devolver valores usando `return`.
 
 ---
+
 # ✍ ¿Dónde tengo que escribir el código?
 
 Todos los ejercicios se resuelven en el archivo:
@@ -226,7 +348,11 @@ practica.py
 
 Cada ejercicio ya tiene una función creada.
 
-Ejemplo:
+---
+
+# 🧪 Ejemplo
+
+## Paso 1 — Código inicial
 
 ```python
 def ejercicio_1():
@@ -235,13 +361,20 @@ def ejercicio_1():
 
 La palabra `pass` significa que la función está vacía.
 
-Tu trabajo es:
+---
+
+## Paso 2 — Tu trabajo
+
+Tenés que:
+
 - borrar `pass`
 - escribir la solución dentro de la función
-- usar `return` para devolver el resultado pedido
-- Guardar el archivo `practica.py`
+- usar `return`
+- guardar el archivo
 
-Ejemplo:
+---
+
+## Paso 3 — Solución
 
 ```python
 def ejercicio_1():
@@ -258,7 +391,9 @@ Desde la terminal, dentro de la carpeta del módulo, ejecutar:
 python test.py
 ```
 
-Resultado esperado:
+---
+
+# 🧪 Resultado esperado
 
 ```text
 🧪 Corrigiendo ejercicios...
@@ -277,7 +412,7 @@ Resultado esperado:
 - No cambies el nombre del archivo `practica.py`.
 - No modifiques `test.py`.
 - Guardá el archivo antes de ejecutar.
-- Usá `return`, no `print()`, para que el test pueda corregir.
+- Usá `return`, no `print()`.
 
 ---
 
@@ -393,6 +528,6 @@ Al finalizar este módulo deberías poder:
 - usar `print()`
 - usar `input()`
 - entender la lógica Entrada → Proceso → Salida
-- entender la diferencia entre print() y return
+- entender la diferencia entre `print()` y `return`
 - usar funciones básicas
-- usar return
+- usar `return`
