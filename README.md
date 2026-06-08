@@ -181,65 +181,109 @@ Luego avanzaremos hacia Programación Orientada a Objetos (POO) y finalmente ver
 
 * ¿Qué es POO?
 * Objetos del mundo real
+* Clase vs objeto
+* ¿Por qué existe POO?
 
 ---
 
 ## M16 — Clases y objetos
 
----
-
-## M17 — Métodos y atributos
-
----
-
-## M18 — Encapsulamiento
+* class
+* Crear objetos
+* Instancias
+* type()
 
 ---
 
-## M19 — Herencia
+## M17 — Atributos
+
+* Atributos de instancia
+* self
+* Acceso a atributos
 
 ---
 
-## M20 — Polimorfismo
+## M18 — Métodos
+
+* Métodos
+* self
+* Comportamientos de los objetos
 
 ---
 
-## M21 — Abstracción
-
----
-
-## M22 — Métodos especiales
+## M19 — Constructores
 
 * **init**
+* Inicialización de objetos
+* Parámetros en constructores
+
+---
+
+## M20 — Encapsulamiento
+
+* Público
+* Protegido (_)
+* Privado (__)
+
+---
+
+## M21 — Herencia
+
+* Clase padre
+* Clase hija
+* Reutilización de código
+
+---
+
+## M22 — Polimorfismo
+
+* Mismo método
+* Diferentes comportamientos
+
+---
+
+## M23 — Abstracción
+
+* Clases abstractas
+* ABC
+* Métodos abstractos
+
+---
+
+## M24 — Métodos especiales
+
 * **str**
 * **repr**
 
 ---
 
-## M23 — Métodos estáticos y de clase
+## M25 — Métodos estáticos y de clase
 
 * @staticmethod
 * @classmethod
 
 ---
 
-## M24 — Composición y agregación
+## M26 — Composición y agregación
+
+* Tiene un
+* Usa un
 
 ---
 
-## M25 — Herencia múltiple
+## M27 — Dataclasses y Duck Typing
 
----
-
-## M26 — Duck Typing
-
----
-
-## M27 — Dataclasses
+* @dataclass
+* Constructor automático
+* Duck Typing
 
 ---
 
 ## M28 — Proyecto final POO
+
+* Sistema de Biblioteca
+* Sistema Bancario
+* Sistema de Gestión de Alumnos
 
 ---
 
@@ -341,17 +385,17 @@ python-desde-cero/
 │
 │   ├── M15_intro_poo/
 │   ├── M16_clases_y_objetos/
-│   ├── M17_metodos_y_atributos/
-│   ├── M18_encapsulamiento/
-│   ├── M19_herencia/
-│   ├── M20_polimorfismo/
-│   ├── M21_abstraccion/
-│   ├── M22_metodos_especiales/
-│   ├── M23_metodos_estaticos/
-│   ├── M24_composicion/
-│   ├── M25_herencia_multiple/
-│   ├── M26_duck_typing/
-│   ├── M27_dataclasses/
+│   ├── M17_atributos/
+│   ├── M18_metodos/
+│   ├── M19_constructores/
+│   ├── M20_encapsulamiento/
+│   ├── M21_herencia/
+│   ├── M22_polimorfismo/
+│   ├── M23_abstraccion/
+│   ├── M24_metodos_especiales/
+│   ├── M25_metodos_estaticos/
+│   ├── M26_composicion/
+│   ├── M27_dataclasses_y_duck_typing/
 │   └── M28_proyecto_final_poo/
 
 ├── ETAPA_3_nivel_profesional/
