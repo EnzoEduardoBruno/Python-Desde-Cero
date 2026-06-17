@@ -266,8 +266,9 @@ Luego avanzaremos hacia Programación Orientada a Objetos (POO) y finalmente ver
 
 ## M26 — Composición y agregación
 
-* Tiene un
-* Usa un
+* ES UN (Herencia)
+* Tiene un (Composición)
+* Usa un (Agregación)
 
 ---
 
@@ -393,7 +394,7 @@ python-desde-cero/
 │   ├── M22_polimorfismo/
 │   ├── M23_abstraccion/
 │   ├── M24_metodos_especiales/
-│   ├── M25_metodos_estaticos/
+│   ├── M25_metodos_estaticos_y_de_clase/
 │   ├── M26_composicion/
 │   ├── M27_dataclasses_y_duck_typing/
 │   └── M28_proyecto_final_poo/
