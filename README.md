@@ -359,16 +359,33 @@ Luego avanzaremos hacia Programación Orientada a Objetos (POO) y finalmente ver
 # 💻 ¿Cómo está organizado el repositorio?
 
 ```text
-python-desde-cero/
+Python-Desde-Cero/
 
 ├── README.md
 ├── LICENSE
 ├── .gitignore
 
+├── ETAPA_0_preparacion_del_entorno/
+│
+│   ├── imagenes/
+│   │
+│   ├── M00_preparacion_del_entorno/
+│   │
+│   │   ├── 00_README.md
+│   │   ├── 01_instalar_python.md
+│   │   ├── 02_instalar_vscode.md
+│   │   ├── 03_instalar_git.md
+│   │   ├── 04_crear_cuenta_github.md
+│   │   ├── 05_extensiones_vscode.md
+│   │   ├── 06_settings_json.md
+│   │   ├── 07_git_basico.md
+│   │   ├── 08_primer_programa.md
+│   │   └── 09_clonar_repositorio.md
+
 ├── ETAPA_1_programacion_secuencial/
 │
 │   ├── M01_intro_programacion/
-│   ├── M02_variables_y_datos/
+│   ├── M02_variables_y_tipos/
 │   ├── M03_operadores/
 │   ├── M04_condicionales/
 │   ├── M05_bucles/
@@ -382,7 +399,7 @@ python-desde-cero/
 │   ├── M13_modularizacion/
 │   └── M14_integrador/
 
-├── ETAPA_2_poo/
+├── ETAPA_2_programacion_orientada_a_objetos/
 │
 │   ├── M15_intro_poo/
 │   ├── M16_clases_y_objetos/
@@ -398,17 +415,6 @@ python-desde-cero/
 │   ├── M26_composicion/
 │   ├── M27_dataclasses_y_duck_typing/
 │   └── M28_proyecto_final_poo/
-
-├── ETAPA_3_nivel_profesional/
-│
-│   ├── M29_testing/
-│   ├── M30_git_y_github/
-│   ├── M31_entornos_virtuales/
-│   ├── M32_apis_y_json/
-│   ├── M33_bases_de_datos/
-│   ├── M34_patrones_de_diseno/
-│   ├── M35_solid/
-│   └── M36_proyecto_final/
 
 ├── ejercicios/
 ├── proyectos/
