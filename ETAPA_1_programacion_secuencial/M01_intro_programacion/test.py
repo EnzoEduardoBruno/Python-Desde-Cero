@@ -1,4 +1,4 @@
-from ETAPA_1_programacion_secuencial.M01_intro_programacion.practica import *
+from practica import *
 
 puntaje = 0
 total = 10
