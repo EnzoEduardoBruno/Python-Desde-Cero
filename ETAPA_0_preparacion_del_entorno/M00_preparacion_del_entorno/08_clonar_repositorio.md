@@ -1,4 +1,4 @@
-# 📥 09 - Clonar este repositorio
+# 📥 08 - Clonar este repositorio
 
 Una vez instalado:
 
