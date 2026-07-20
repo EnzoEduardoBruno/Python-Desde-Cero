@@ -1,4 +1,4 @@
-from ETAPA_1_programacion_secuencial.M04_condicionales.practica import *
+from practica import *
 
 puntaje = 0
 total = 10
