@@ -38,24 +38,19 @@ git version 2.xx.x.windows.x
 Git necesita saber quién realiza los cambios.
 
 ```bash
-git config --global user.name "EnzoISPC"
-git config --global user.email "EnzoISPC@outlook.com"
+git config --global user.name "Tu Nombre"
+git config --global user.email "Tu@email.com"
 ```
 
----
-
-# 🔑 PASO 3: Configurar autenticación por navegador
-
-Para que Git abra automáticamente el navegador cuando necesites autenticarte:
-
+Ejemplo:
 ```bash
-git config --global credential.helper manager
-git config --global credential.gitHubAuthModes browser
+git config --global user.name "Enzo Bruno"
+git config --global user.email "enzo@gmail.com"
 ```
 
 ---
 
-# ✅ PASO 4: Verificar configuración
+# ✅ PASO 3: Verificar configuración
 
 ```bash
 git config --list
@@ -64,15 +59,15 @@ git config --list
 Resultado esperado:
 
 ```text
-user.name=EnzoISPC
-user.email=EnzoISPC@outlook.com
+user.name=Enzo Bruno
+user.email=enzo@gmail.com
 credential.helper=manager
 credential.gitHubAuthModes=browser
 ```
 
 ---
 
-# 📁 PASO 5: Crear carpeta del proyecto
+# 📁 PASO 4: Crear carpeta del proyecto
 
 ```bash
 mkdir nuevoproyecto
@@ -81,7 +76,7 @@ cd nuevoproyecto
 
 ---
 
-# 🌱 PASO 6: Inicializar repositorio Git
+# 🌱 PASO 5: Inicializar repositorio Git
 
 ```bash
 git init
@@ -90,12 +85,12 @@ git init
 Resultado esperado:
 
 ```text
-Initialized empty Git repository in /c/Users/EnzoISPC/OneDrive/Desktop/nuevoproyecto/.git/
+Initialized empty Git repository in /c/Users/TU_USUARIO/OneDrive/Desktop/nuevoproyecto/.git/
 ```
 
 ---
 
-# 🐍 PASO 7: Crear archivo `hola.py`
+# 🐍 PASO 6: Crear archivo `hola.py`
 
 ### Opción A: Desde Git Bash
 
@@ -131,7 +126,7 @@ Ctrl + S
 
 ---
 
-# 📄 PASO 8: Ver contenido del archivo
+# 📄 PASO 7: Ver contenido del archivo
 
 ```bash
 cat hola.py
@@ -145,7 +140,7 @@ print('Hola mundo')
 
 ---
 
-# 🔍 PASO 9: Ver estado de Git
+# 🔍 PASO 8: Ver estado de Git
 
 ```bash
 git status
@@ -168,7 +163,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 
 ---
 
-# ➕ PASO 10: Agregar archivos al área de staging
+# ➕ PASO 9: Agregar archivos al área de staging
 
 ```bash
 git add .
@@ -188,7 +183,7 @@ Todos los archivos de la carpeta actual.
 
 ---
 
-# 📋 PASO 11: Verificar estado nuevamente
+# 📋 PASO 10: Verificar estado nuevamente
 
 ```bash
 git status
@@ -207,7 +202,7 @@ Changes to be committed:
         new file:   hola.py
 ```
 
-# 💾 PASO 12: Crear el commit (guardar cambios)
+# 💾 PASO 11: Crear el commit (guardar cambios)
 
 ```bash
 git commit -m "Mi primer commit - agregando hola.py"
@@ -223,7 +218,7 @@ Resultado esperado:
 
 ---
 
-# 📜 PASO 13: Ver historial de commits
+# 📜 PASO 12: Ver historial de commits
 
 ```bash
 git log
@@ -234,7 +229,7 @@ Resultado esperado:
 ```text
 commit 1234567890abcdef...
 
-Author: EnzoISPC <EnzoISPC@outlook.com>
+Author: Enzo Bruno <enzo@gmail.com>
 
 Date: Mon Jul 20 11:11:06 2026 -0300
 
@@ -243,7 +238,7 @@ Date: Mon Jul 20 11:11:06 2026 -0300
 
 ---
 
-# ☁️ PASO 14: Crear repositorio en GitHub
+# ☁️ PASO 13: Crear repositorio en GitHub
 
 1. Entrar a:
 
@@ -294,15 +289,15 @@ Create repository
 
 ---
 
-# 🔗 PASO 15: Conectar repositorio local con GitHub
+# 🔗 PASO 14: Conectar repositorio local con GitHub
 
 ```bash
-git remote add origin https://github.com/EnzoISPC/nuevoproyecto.git
+git remote add origin https://github.com/TU_USUARIO/nuevoproyecto.git
 ```
 
 ---
 
-# 🌐 PASO 16: Verificar conexión remota
+# 🌐 PASO 15: Verificar conexión remota
 
 ```bash
 git remote -v
@@ -311,30 +306,35 @@ git remote -v
 Resultado esperado:
 
 ```text
-origin  https://github.com/EnzoISPC/nuevoproyecto.git (fetch)
+origin  https://github.com/TU_USUARIO/nuevoproyecto.git (fetch)
 
-origin  https://github.com/EnzoISPC/nuevoproyecto.git (push)
+origin  https://github.com/TU_USUARIO/nuevoproyecto.git (push)
 ```
 
 ---
 
-# 🚀 PASO 17: Subir cambios a GitHub
+# 🚀 PASO 16: Subir cambios a GitHub
+
+Ejecutar:
 
 ```bash
-git push -u origin master
+git push -u origin main
 ```
 
-La primera vez sucederá lo siguiente:
+La primera vez que ejecutes este comando sucederá lo siguiente:
 
-1. Git detectará que necesitás autenticarte.
-2. Se abrirá automáticamente el navegador.
-3. Iniciarás sesión en GitHub (si todavía no lo hiciste).
-4. Autorizarás el acceso.
-5. Git continuará automáticamente y subirá el proyecto.
+1. Git detectará que necesitás iniciar sesión en GitHub.
+2. Se abrirá automáticamente tu navegador web.
+3. Iniciá sesión con tu cuenta de GitHub (si todavía no lo hiciste).
+4. GitHub te pedirá autorizar el acceso de Git.
+5. Hacé clic en **Authorize**.
+6. Una vez autorizada la aplicación, Git continuará automáticamente y subirá tu proyecto.
+
+No necesitás copiar tokens ni realizar configuraciones adicionales. Si instalaste Git desde el sitio oficial, Git Credential Manager se encargará automáticamente del proceso de autenticación.
 
 ---
 
-# ✅ PASO 18: Verificar que subió correctamente
+# ✅ PASO 17: Verificar que subió correctamente
 
 ```bash
 git status
@@ -352,12 +352,12 @@ nothing to commit, working tree clean
 
 ---
 
-# 🌍 PASO 19: Ver el repositorio en GitHub
+# 🌍 PASO 18: Ver el repositorio en GitHub
 
 Ingresar a:
 
 ```text
-https://github.com/EnzoISPC/nuevoproyecto
+https://github.com/TU_USUARIO/nuevoproyecto
 ```
 
 Verificar que aparezcan:
@@ -367,7 +367,7 @@ Verificar que aparezcan:
 
 ---
 
-# ▶ PASO 20: Ejecutar el programa
+# ▶ PASO 19: Ejecutar el programa
 
 ```bash
 python hola.py
@@ -462,9 +462,9 @@ git push origin main
 Ejecutar:
 
 ```bash
-git config --global user.name "EnzoISPC"
+git config --global user.name "Tu Usario"
 
-git config --global user.email "EnzoISPC@outlook.com"
+git config --global user.email "tu@email.com"
 ```
 
 ---
