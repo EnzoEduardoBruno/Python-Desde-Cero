@@ -311,8 +311,7 @@ Python-Desde-Cero/
 │   │   ├── 05_extensiones_vscode.md
 │   │   ├── 06_settings_json.md
 │   │   ├── 07_git_basico.md
-│   │   ├── 08_primer_programa.md
-│   │   └── 09_clonar_repositorio.md
+│   │   └── 08_clonar_repositorio.md
 
 ├── ETAPA_1_programacion_secuencial/
 │
