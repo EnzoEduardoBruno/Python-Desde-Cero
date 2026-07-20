@@ -1,4 +1,4 @@
-# 🌿 Git básico + 🐍 Primer programa en Python
+# 07 - 🌿 Git básico + 🐍 Primer programa en Python
 
 En este módulo aprenderemos a utilizar **Git** para versionar nuestros proyectos, crearemos nuestro primer programa en **Python** y lo subiremos a **GitHub**.
 
